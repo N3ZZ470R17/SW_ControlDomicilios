@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto+Condensed&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,26 +31,10 @@ header {
     position: relative;
 }
 
-nav {
-    text-align: right;
-    padding: 30px 50px 0 0;
-}
-
-nav>a {
-    color: azure;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav>a:hover {
-    text-decoration: underline;
-}
-
 header .textos {
     display: flex;
     height: 400px;
-    width: 50%;
+    width: 60%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -58,6 +43,7 @@ header .textos {
 
 .textos h1 {
     font-size: 50px;
+    font-family: 'DM Sans', sans-serif;
     color: #fff;
 }
 
@@ -122,10 +108,15 @@ h2 {
     border-radius: 4px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
-    left: 800px;
+    left: 950px;
     top: -30px;
     color: white;
     box-shadow: 7px 13px 3px hsla(302, 65%, 36%, 0.555);
+    border: none;
+}
+
+.formulario .control {
+    border-style: none;
 }
 
 .formulario h4 {
@@ -168,8 +159,22 @@ h2 {
     color: white;
     margin: 10px 0;
     font-style: 16px;
+    border-radius: 10px;
 }
 
 .boton:hover {
     color: #ffffffa4;
+}
+
+.float {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
 }
